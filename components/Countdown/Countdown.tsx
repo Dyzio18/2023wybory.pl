@@ -1,3 +1,6 @@
+"use client";
+
+
 export const Countdown = () => {
   const daysUntilOctober15 = () => {
     const currentDate = new Date();
@@ -10,14 +13,13 @@ export const Countdown = () => {
   const daysLeft = daysUntilOctober15();
 
   return (
-    <div className="flex flex-col items-center mt-5">
-      <div className="text-2xl">
-        Do wyborów do Sejmu i Senatu 15 października 2023 pozostało:
-      </div>
-      <div className="flex justify-between pt-20">
-        <div className="text-2xl text-green-300 text-center">
-          {daysLeft} dni
-        </div>
+    <div className="flex flex-col items-center mt-8">
+      <div className="text-2xl  text-center">
+        Do wyborów pozostało&nbsp;
+        <span className="font-bold text-red-600">
+          {daysLeft}
+        </span>
+        &nbsp;dni.
       </div>
     </div>
   );

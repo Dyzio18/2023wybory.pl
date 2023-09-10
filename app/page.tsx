@@ -1,37 +1,27 @@
 import Head from 'next/head';
-import { Countdown, DoughnutChart } from '@/components';
+import { IntroSection } from '@/components';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>2023 Wybory</title>
-      </Head>
-      <main className="flex flex-col mb-4">
-        <Header />
-        <div className="mb-8">
-          {/* <Countdown /> */}
-        </div>
-        <div className="max-w-xl m-auto flex-col justify-center text-center pt-6 mb-4">
-          Sondażowe poparcie wyborcze (stan na 5-6 września 2023)
-          <DoughnutChart />
-        </div>
-
-        <div className="m-auto max-w-lg text-center pt-6 mb-4">
-          <p>
-            Ogólnokrajowe wybory to jedno z najważniejszych wydarzeń w życiu politycznym kraju. To czas, kiedy obywatele mają szansę wybrać swoich przedstawicieli do parlamentu, senatu, a także do organów samorządu terytorialnego. Wybory są fundamentem demokracji, ponieważ to właśnie wtedy obywatele mają wpływ na kształtowanie przyszłości kraju. Każdy głos jest ważny i może mieć znaczący wpływ na wynik wyborów. Dlatego warto brać udział w wyborach i wykorzystać swoje prawo do głosowania.
-          </p>
-        </div>
-
-      </main>
-    </>
+    <main>
+      <IntroSection />
+    </ main>
   );
 }
-
 
 const Header = () => {
   return (
     <section>
+      <div className="hero ">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          {/* <img src="/next.svg" className="max-w-sm rounded-lg shadow-2xl" /> */}
+          <div>
+            <h1 className="text-5xl font-bold">Box Office News!</h1>
+            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
       <h1 className="text-5xl text-center mt-3 font-bold text-gray-900">2023wybory.pl</h1>
       <p className="text-xl text-center pt-3 text-gray-700">
         Wybory są fundamentem demokracji.<br /> To szansa na wpływanie na przyszłość naszego kraju. <br />
