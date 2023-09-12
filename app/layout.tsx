@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css';
 import { Footer } from '@/components/Footer/Footer';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,6 +36,16 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={inter.className}>
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-7D6XCN1EYB' />
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-7D6XCN1EYB');
+        `}
+        </Script>
         <div className='app-container'>
           {children}
         </div>
