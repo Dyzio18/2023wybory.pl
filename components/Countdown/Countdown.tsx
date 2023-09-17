@@ -1,6 +1,5 @@
 "use client";
 
-
 export const Countdown = () => {
   const daysUntilOctober15 = () => {
     const currentDate = new Date();

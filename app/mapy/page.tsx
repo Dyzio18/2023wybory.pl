@@ -1,14 +1,10 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
-import { Footer, Header } from '@/components';
-import Script from 'next/script';
-
-import './globals.css';
-const inter = Inter({ subsets: ['latin'] });
+import Head from 'next/head';
+import { IntroSection } from '@/components';
+import Layout from '@/components/Layout/Layout';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Wybory Parlamentarne i Senackie 2023 | 2023Wybory.pl - Informacje, Kandydaci, Wyniki',
+  title: 'Wyborcze FAQ - co warto wiedzieć? | 2023Wybory.pl - Informacje, Kandydaci, Wyniki',
   description: 'Znajdź najważniejsze informacje na temat wyborów parlamentarnych i senackich w Polsce w 2023 roku na 2023Wybory.pl. Poznaj kandydatów, sprawdź wyniki i dowiedz się, gdzie głosować. Bądź na bieżąco z naszym serwisem',
   generator: "Next.js",
   viewport: "width=device-width, initial-scale=1",
@@ -26,32 +22,14 @@ export const metadata: Metadata = {
   },
 };
 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Index() {
   return (
-    <html lang="pl">
-      <body className={inter.className}>
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-7D6XCN1EYB' />
-        <Script>
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-7D6XCN1EYB');
-        `}
-        </Script>
-        <Header />
-        <div className='app-container'>
-          {children}
-        </div>
-        <Footer />
-        <Analytics />
-      </body>
-    </html>
+    <main>
+      asasas
+      asas
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odio id nulla doloribus, deserunt expedita corrupti eveniet ut deleniti aliquid dolore aperiam provident quis laboriosam tenetur natus blanditiis quod numquam!
+    </ main>
   );
 }
+
+
