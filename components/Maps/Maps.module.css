@@ -10,4 +10,6 @@
 .map{
   fill: gray; 
   stroke: black;
+  max-width: 95%;
+  height: 100%;
 }

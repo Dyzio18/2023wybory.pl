@@ -1,3 +1,4 @@
+export * from './Breadcrumbs';
 export * from './Countdown';
 export * from './DoughnutChart';
 export * from './Footer';

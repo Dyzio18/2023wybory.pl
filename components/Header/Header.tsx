@@ -22,20 +22,8 @@ export const Header = () => {
               </li>
 
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="/">
-                  Gdzie zagłosować
-                </a>
-              </li>
-
-              <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="/">
-                  Kandydaci
-                </a>
-              </li>
-
-              <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="/">
-                  Aktualności
+                <a className="text-gray-500 transition hover:text-gray-500/75" href="/mapy">
+                  Sejm
                 </a>
               </li>
             </ul>
