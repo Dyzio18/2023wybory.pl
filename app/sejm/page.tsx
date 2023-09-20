@@ -1,4 +1,4 @@
-import { SejmMap } from '@/components';
+import { Breadcrumbs, SejmMap } from '@/components';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -23,7 +23,13 @@ export const metadata: Metadata = {
 export default function Index() {
   return (
     <main>
-      <div className='container max-w-4xl mx-auto'>
+      <div className='container mx-auto max-w-screen-xl px-4 pb-6 sm:px-6 lg:px-8'>
+        <Breadcrumbs
+          level1={{
+            link: "/sejm",
+            label: "Sejm"
+          }}
+        />
         <h1 className='text-4xl font-bold text-center'>Wybory do sejmu</h1>
         <p className='text-center'>Wybierz okręg wyborczy i sprawdź kandydatów do sejmu.</p>
       </div>

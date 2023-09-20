@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import styles from "./Maps.module.css";
 import { Region } from "./Region";
@@ -21,11 +20,21 @@ export const SejmMap = () => {
 
   return (
     <div className={styles.mapWrapper}>
-      {selectedRegion && (<div>
-        Region:
-        {SEJM[selectedRegion].regionId} <br />
-        {SEJM[selectedRegion].text}
-      </div>)}
+      {selectedRegion && (
+        <div className={styles.details}>
+          <div>
+            <h2 className="text-lg font-bold">{SEJM[selectedRegion].text}</h2>
+          </div>
+          <div>
+            <a
+              href={`/sejm/${selectedRegion}`}
+              className="block p-4 text-white bg-blue-500 rounded hover:bg-blue-600"
+            >
+              Zobacz okręg {selectedRegion}
+            </a>
+          </div>
+        </div>
+      )}
 
       <div>
         <svg

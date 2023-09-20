@@ -8,8 +8,21 @@
 }
 
 .map{
-  fill: gray; 
-  stroke: black;
+  fill: #6D8C3D; 
+  stroke: #29433C;
   max-width: 95%;
   height: 100%;
+}
+
+.details{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: aliceblue;
 }

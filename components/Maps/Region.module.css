@@ -12,3 +12,10 @@
   position: relative;
   cursor: pointer;
 }
+
+.region:hover{
+  cursor: pointer;
+  fill: #BFD676;
+  position: relative;
+}
+

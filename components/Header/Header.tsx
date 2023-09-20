@@ -22,7 +22,7 @@ export const Header = () => {
               </li>
 
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="/mapy">
+                <a className="text-gray-500 transition hover:text-gray-500/75" href="/sejm">
                   Sejm
                 </a>
               </li>

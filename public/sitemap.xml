@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://2023wybory.pl</loc>
-    <lastmod>2023-09-10</lastmod>
+    <lastmod>2023-09-19</lastmod>
+  <url>
+    <loc>https://2023wybory.pl/faq</loc>
+    <lastmod>2023-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://2023wybory.pl/mapy</loc>
+    <lastmod>2023-09-19</lastmod>
   </url>
 </urlset>

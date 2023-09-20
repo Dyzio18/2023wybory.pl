@@ -88,7 +88,7 @@ export const IntroSection = () => {
 
           <a
             className="block rounded-xl border border-gray-300 p-8 shadow-xl transition hover:border-pink-500 hover:shadow-pink-500"
-            href="https://wybory.gov.pl/sejmsenat2023/pl/kandydaci"
+            href="/sejm"
             target="_blank"
           >
             <svg
