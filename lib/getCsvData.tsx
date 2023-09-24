@@ -20,7 +20,7 @@ function removeBOM(data: string) {
   return data;
 }
 
-export function getCsvRowIds(name: string) {
+export function getCsvDistrictIds(name: string) {
   const fullPath = path.join(postsDirectory, name);
   const fileContents = removeBOM(fs.readFileSync(fullPath, 'utf8'));
   const records: Number[] = [];
@@ -65,7 +65,7 @@ interface SejmCsvRow {
   region?: SejmCsvHeaders;
 }
 
-export function getSejmCsvRowData(id: number) {
+export function getSejmCsvDataByDistrict(id: number) {
   const fullPath = path.join(postsDirectory, 'sejm.csv');
   const fileContents = removeBOM(fs.readFileSync(fullPath, 'utf8'));
 
@@ -128,7 +128,7 @@ interface SejmCandidateCsvRow {
   candidates?: CandidateCsvHeaders[];
 }
 
-export function getSejmCandidateCsvRowData(id: number) {
+export function getSejmCandidatesCsvDataByDistrict(id: number) {
   const fullPath = path.join(postsDirectory, 'kandydaci_sejm.csv');
   const fileContents = removeBOM(fs.readFileSync(fullPath, 'utf8'));
 

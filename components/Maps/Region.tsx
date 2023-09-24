@@ -3,7 +3,6 @@
 import { useMounted, useHover } from "@/hooks";
 import { SVGProps, useEffect } from "react";
 import styles from "./Region.module.css";
-import { get } from "http";
 
 interface RegionProps extends SVGProps<SVGPathElement> {
   link?: string;
@@ -14,7 +13,7 @@ interface RegionProps extends SVGProps<SVGPathElement> {
 }
 
 export const Region = ({ children, link, text, regionId, getSelected, getHovered }: RegionProps) => {
-  const { hasMounted } = useMounted();
+  const { hasMounted: _hasMounted } = useMounted();
   const [isHovered, eventHandlers] = useHover();
 
   useEffect(() => {

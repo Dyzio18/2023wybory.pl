@@ -1,11 +1,11 @@
 import { Footer, Header } from '@/components';
 import '../../app/globals.css';
 
-export default function Layout({
+export const Layout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) => {
   return (
     <>
       <Header />
@@ -15,4 +15,4 @@ export default function Layout({
       <Footer />
     </>
   );
-}
+};

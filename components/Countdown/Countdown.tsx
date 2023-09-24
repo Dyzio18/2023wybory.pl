@@ -12,14 +12,14 @@ export const Countdown = () => {
   const daysLeft = daysUntilOctober15();
 
   return (
-    <div className="flex flex-col items-center mt-8">
-      <div className="text-2xl  text-center">
-        Do wyborów pozostało&nbsp;
-        <span className="font-bold text-red-600">
-          {daysLeft}
-        </span>
-        &nbsp;dni.
+    <div role="alert" className="rounded border-s-4 mt-4 border-red-500 bg-red-50 p-4">
+      <div className="flex items-center gap-2 text-red-800">
+        <strong className="block font-medium"> Do wyborów i referendum zostało </strong>
       </div>
+
+      <p className="mt-2 text-red-700 text-2xl font-bold">
+        {daysLeft} {daysLeft === 1 ? "dzień" : "dni"}
+      </p>
     </div>
   );
 };

@@ -45,8 +45,8 @@ export const data = {
 export const DoughnutChart = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
   return (
-    <div className="flex justify-center pt-10 mb-10">
-      <div className="flex justify-center  max-w-screen-4xl">
+    <div className="w-100">
+      <div className="flex justify-center">
         <Doughnut data={data} width={'700'} />
       </div>
     </div>

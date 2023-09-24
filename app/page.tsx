@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { DoughnutChart, IntroSection, ReferendumSection, SejmMap } from '@/components';
+import { DoughnutChart, ElectionPools, IntroSection, ReferendumSection, SejmMap } from '@/components';
 
 export default function Home() {
   return (
@@ -10,7 +10,8 @@ export default function Home() {
       <p className='text-center'>Wybierz okręg wyborczy i sprawdź kandydatów do sejmu.</p>
       <SejmMap />
       <ReferendumSection />
-      <DoughnutChart />
+      <ElectionPools />
+      {/* <DoughnutChart /> */}
     </ main>
   );
 }

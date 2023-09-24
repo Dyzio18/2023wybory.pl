@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import { IntroSection, SejmMap } from '@/components';
-import Layout from '@/components/Layout/Layout';
+import { IntroSection, SejmMap, Layout, FAQ, FAQProps } from '@/components';
 import { Metadata } from 'next';
-import { FAQ, FAQProps } from '@/components/FAQ/FAQ';
 
 export const metadata: Metadata = {
   title: 'Okręgi wyborcze | 2023Wybory.pl - Informacje, Kandydaci, Wyniki',
@@ -26,7 +24,7 @@ export const metadata: Metadata = {
 const FAQs = [
   {
     question: "Czy 2023Wybory.pl jest stroną oficjalną?",
-    answer: "To projekt społeczny, który ma na celu ułatwienie dostępu do informacji o wyborach parlamentarnych i senackich w 2023 roku. Nie jesteśmy stroną oficjalną.",
+    answer: "To nie jest oficjalna strona. To projekt, który ma na celu ułatwienie dostępu do informacji o wyborach parlamentarnych i senackich w 2023 roku.",
   },
   {
     question: "Kiedy odbędą się wybory parlamentarne i senackie w 2023 roku?",

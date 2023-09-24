@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@/components";
-import { getCsvRowIds, getSejmCsvRowData, getSejmCandidateCsvRowData, CandidateCsvHeaders } from '@/lib/getCsvData';
+import { getCsvDistrictIds, getSejmCsvDataByDistrict, getSejmCandidatesCsvDataByDistrict, CandidateCsvHeaders } from '@/lib/getCsvData';
 
 interface PageProps {
   params: {
@@ -9,7 +9,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const paths = getCsvRowIds('sejm.csv');
+  const paths = getCsvDistrictIds('sejm.csv');
   return paths.map((id) => {
     return {
       params: {
@@ -20,8 +20,8 @@ export async function generateStaticParams() {
 }
 
 export default function Page({ params }: PageProps) {
-  const data = getSejmCsvRowData(params.id).region;
-  const candidates = getSejmCandidateCsvRowData(params.id).candidates;
+  const data = getSejmCsvDataByDistrict(params.id).region;
+  const candidates = getSejmCandidatesCsvDataByDistrict(params.id).candidates;
 
   return (
     <div className='container mx-auto max-w-screen-xl px-4 pb-6 sm:px-6 lg:px-8'>
