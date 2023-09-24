@@ -47,7 +47,7 @@ const poolData = {
   tr: [14, 14, 13, 9, 10, 10, 11, 10, 10, 10, 10, 10],
 };
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {

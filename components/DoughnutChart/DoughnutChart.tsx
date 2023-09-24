@@ -5,7 +5,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 
-export const data = {
+const data = {
   labels: [
     PARTIES.pis.name,
     PARTIES.po.name,
