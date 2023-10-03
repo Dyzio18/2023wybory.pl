@@ -1,207 +1,412 @@
-export const SEJM: Record<string, { link: string; regionId: number; text: string }> = {
-  "1": {
-    link: "/sejm/1",
-    regionId: 1,
-    text: "Okręg wyborczy nr 1 [Legnica]",
+export const SEJM = [
+  {
+    "regionId": 1,
+    "seats": 12,
+    "listCount": 7,
+    "candidates": 158,
+    "stats": "",
+    
+    "headquarters": "Legnica",
+    "description": "część województwa dolnośląskiego obejmująca obszary powiatów: bolesławiecki, głogowski, jaworski, kamiennogórski, karkonoski, legnicki, lubański, lubiński, lwówecki, polkowicki, zgorzelecki, złotoryjski oraz miast na prawach powiatu: Jelenia Góra, Legnica"
   },
-  "2": {
-    link: "/sejm/2",
-    regionId: 2,
-    text: "Okręg wyborczy nr 2 [Wałbrzych]",
+  {
+    "regionId": 2,
+    "seats": 8,
+    "listCount": 6,
+    "candidates": 96,
+    "stats": "",
+    
+    "headquarters": "Wałbrzych",
+    "description": "część województwa dolnośląskiego  obejmująca obszary powiatów:  dzierżoniowski, kłodzki, świdnicki, wałbrzyski, ząbkowicki  oraz miasta na prawach powiatu:  Wałbrzych"
   },
-  "3": {
-    link: "/sejm/3",
-    regionId: 3,
-    text: "Okręg wyborczy nr 3 [Wrocław]",
+  {
+    "regionId": 3,
+    "seats": 14,
+    "listCount": 7,
+    "candidates": 186,
+    "stats": "",
+    
+    "headquarters": "Wrocław",
+    "description": "część województwa dolnośląskiego  obejmująca obszary powiatów:  górowski, milicki, oleśnicki, oławski, strzeliński, średzki, trzebnicki, wołowski, wrocławski  oraz miasta na prawach powiatu:  Wrocław"
   },
-  "4": {
-    link: "/sejm/4",
-    regionId: 4,
-    text: "Okręg wyborczy nr 4 [Bydgoszcz]",
+  {
+    "regionId": 4,
+    "seats": 12,
+    "listCount": 6,
+    "candidates": 144,
+    "stats": "",
+    
+    "headquarters": "Bydgoszcz",
+    "description": "część województwa kujawsko-pomorskiego obejmująca obszary powiatów: bydgoski, inowrocławski, mogileński, nakielski, sępoleński, świecki, tucholski, żniński oraz miasta na prawach powiatu: Bydgoszcz"
   },
-  "5": {
-    link: "/sejm/5",
-    regionId: 5,
-    text: "Okręg wyborczy nr 5 [Toruń]",
+  {
+    "regionId": 5,
+    "seats": 13,
+    "listCount": 6,
+    "candidates": 155,
+    "stats": "",
+    
+    "headquarters": "Toruń",
+    "description": "część województwa kujawsko-pomorskiego obejmująca obszary powiatów: aleksandrowski, brodnicki, chełmiński, golubsko-dobrzyński, grudziądzki, lipnowski, radziejowski, rypiński, toruński, wąbrzeski, włocławski oraz miast na prawach powiatu: Grudziądz, Toruń, Włocławek"
   },
-  "6": {
-    link: "/sejm/6",
-    regionId: 6,
-    text: "Okręg wyborczy nr 6 [Lublin]",
+  {
+    "regionId": 6,
+    "seats": 15,
+    "listCount": 8,
+    "candidates": 219,
+    "stats": "",
+    
+    "headquarters": "Lublin",
+    "description": "część województwa lubelskiego obejmująca obszary powiatów: janowski, kraśnicki, lubartowski, lubelski, łęczyński, łukowski, opolski, puławski, rycki, świdnicki oraz miasta na prawach powiatu: Lublin"
   },
-  "7": {
-    link: "/sejm/7",
-    regionId: 7,
-    text: "Okręg wyborczy nr 7 [Chełm]",
+  {
+    "regionId": 7,
+    "seats": 12,
+    "listCount": 8,
+    "candidates": 177,
+    "stats": "",
+    
+    "headquarters": "Chełm",
+    "description": "część województwa lubelskiego obejmująca obszary powiatów: bialski, biłgorajski, chełmski, hrubieszowski, krasnostawski, parczewski, radzyński, tomaszowski, włodawski, zamojski oraz miast na prawach powiatu: Biała Podlaska, Chełm, Zamość"
   },
-  "8": {
-    link: "/sejm/8",
-    regionId: 8,
-    text: "Okręg wyborczy nr 8 [Zielona Góra]",
+  {
+    "regionId": 8,
+    "seats": 12,
+    "listCount": 8,
+    "candidates": 177,
+    "stats": "",
+    
+    "headquarters": "Zielona Góra",
+    "description": "województwo lubuskie"
   },
-  "9": {
-    link: "/sejm/9",
-    regionId: 9,
-    text: "Okręg wyborczy nr 9 [Łódź]",
+  {
+    "regionId": 9,
+    "seats": 10,
+    "listCount": 6,
+    "candidates": 119,
+    "stats": "",
+    
+    "headquarters": "Łódź",
+    "description": "część województwa łódzkiego obejmująca obszary powiatów: brzeziński, łódzki wschodni oraz miasta na prawach powiatu: Łódź"
   },
-  "10": {
-    link: "/sejm/10",
-    regionId: 10,
-    text: "Okręg wyborczy nr 10 [Piotrków Trybunalski]",
+  {
+    "regionId": 10,
+    "seats": 9,
+    "listCount": 9,
+    "candidates": 147,
+    "stats": "",
+    
+    "headquarters": "Piotrków Trybunalski",
+    "description": "część województwa łódzkiego obejmująca obszary powiatów: bełchatowski, opoczyński, piotrkowski, radomszczański, rawski, skierniewicki, tomaszowski oraz miast na prawach powiatu: Piotrków Trybunalski, Skierniewice"
   },
-  "11": {
-    link: "/sejm/11",
-    regionId: 11,
-    text: "Okręg wyborczy nr 11 [Sieradz]",
+  {
+    "regionId": 11,
+    "seats": 12,
+    "listCount": 9,
+    "candidates": 194,
+    "stats": "",
+    
+    "headquarters": "Sieradz",
+    "description": "część województwa łódzkiego obejmująca obszary powiatów: kutnowski, łaski, łęczycki, łowicki, pabianicki, pajęczański, poddębicki, sieradzki, wieluński, wieruszowski, zduńskowolski, zgierski"
   },
-  "12": {
-    link: "/sejm/12",
-    regionId: 12,
-    text: "Okręg wyborczy nr 12 [Kraków]",
+  {
+    "regionId": 12,
+    "seats": 8,
+    "listCount": 6,
+    "candidates": 96,
+    "stats": "",
+    
+    "headquarters": "Kraków",
+    "description": "część województwa małopolskiego obejmująca obszary powiatów: chrzanowski, myślenicki, oświęcimski, suski, wadowicki"
   },
-  "13": {
-    link: "/sejm/13",
-    regionId: 13,
-    text: "Okręg wyborczy nr 13 [Kraków]",
+  {
+    "regionId": 13,
+    "seats": 14,
+    "listCount": 7,
+    "candidates": 184,
+    "stats": "",
+    
+    "headquarters": "Kraków",
+    "description": "część województwa małopolskiego obejmująca obszary powiatów: krakowski, miechowski, olkuski oraz miasta na prawach powiatu: Kraków"
   },
-  "14": {
-    link: "/sejm/14",
-    regionId: 14,
-    text: "Okręg wyborczy nr 14 [Nowy Sącz]",
+  {
+    "regionId": 14,
+    "seats": 10,
+    "listCount": 7,
+    "candidates": 133,
+    "stats": "",
+    
+    "headquarters": "Nowy Sącz",
+    "description": "część województwa małopolskiego obejmująca obszary powiatów: gorlicki, limanowski, nowosądecki, nowotarski, tatrzański oraz miasta na prawach powiatu: Nowy Sącz"
   },
-  "15": {
-    link: "/sejm/15",
-    regionId: 15,
-    text: "Okręg wyborczy nr 15 [Tarnów]",
+  {
+    "regionId": 15,
+    "seats": 9,
+    "listCount": 7,
+    "candidates": 123,
+    "stats": "",
+    
+    "headquarters": "Tarnów",
+    "description": "część województwa małopolskiego obejmująca obszary powiatów: bocheński, brzeski, dąbrowski, proszowicki, tarnowski, wielicki oraz miasta na prawach powiatu: Tarnów"
   },
-  "16": {
-    link: "/sejm/16",
-    regionId: 16,
-    text: "Okręg wyborczy nr 16 [Płock]",
+  {
+    "regionId": 16,
+    "seats": 10,
+    "listCount": 6,
+    "candidates": 120,
+    "stats": "",
+    
+    "headquarters": "Płock",
+    "description": "część województwa mazowieckiego obejmująca obszary powiatów: ciechanowski, gostyniński, mławski, płocki, płoński, przasnyski, sierpecki, sochaczewski, żuromiński, żyrardowski oraz miasta na prawach powiatu: Płock"
   },
-  "17": {
-    link: "/sejm/17",
-    regionId: 17,
-    text: "Okręg wyborczy nr 17 [Radom]",
+  {
+    "regionId": 17,
+    "seats": 9,
+    "listCount": 7,
+    "candidates": 120,
+    "stats": "",
+    
+    "headquarters": "Radom",
+    "description": "część województwa mazowieckiego obejmująca obszary powiatów: białobrzeski, grójecki, kozienicki, lipski, przysuski, radomski, szydłowiecki, zwoleński oraz miasta na prawach powiatu: Radom"
   },
-  "18": {
-    link: "/sejm/18",
-    regionId: 18,
-    text: "Okręg wyborczy nr 18 [Siedlce]",
+  {
+    "regionId": 18,
+    "seats": 12,
+    "listCount": 9,
+    "candidates": 194,
+    "stats": "",
+    
+    "headquarters": "Siedlce",
+    "description": "część województwa mazowieckiego obejmująca obszary powiatów: garwoliński, łosicki, makowski, miński, ostrołęcki, ostrowski, pułtuski, siedlecki, sokołowski, węgrowski, wyszkowski oraz miast na prawach powiatu: Ostrołęka, Siedlce"
   },
-  "19": {
-    link: "/sejm/19",
-    regionId: 19,
-    text: "Okręg wyborczy nr 19 [Warszawa]",
+  {
+    "regionId": 19,
+    "seats": 20,
+    "listCount": 6,
+    "candidates": 239,
+    "stats": "",
+    
+    "headquarters": "Warszawa",
+    "description": "część województwa mazowieckiego obejmująca obszar miasta na prawach powiatu: Warszawa"
   },
-  "20": {
-    link: "/sejm/20",
-    regionId: 20,
-    text: "Okręg wyborczy nr 20 [Warszawa]",
+  {
+    "regionId": 20,
+    "seats": 12,
+    "listCount": 6,
+    "candidates": 144,
+    "stats": "",
+    
+    "headquarters": "Warszawa",
+    "description": "część województwa mazowieckiego obejmująca obszary powiatów: grodziski, legionowski, nowodworski, otwocki, piaseczyński, pruszkowski, warszawski zachodni, wołomiński"
   },
-  "21": {
-    link: "/sejm/21",
-    regionId: 21,
-    text: "Okręg wyborczy nr 21 [Opole]",
+  {
+    "regionId": 21,
+    "seats": 12,
+    "listCount": 7,
+    "candidates": 168,
+    "stats": "",
+    
+    "headquarters": "Opole",
+    "description": "województwo opolskie"
   },
-  "22": {
-    link: "/sejm/22",
-    regionId: 22,
-    text: "Okręg wyborczy nr 22 [Krosno]",
+  {
+    "regionId": 22,
+    "seats": 11,
+    "listCount": 8,
+    "candidates": 152,
+    "stats": "",
+    
+    "headquarters": "Krosno",
+    "description": "część województwa podkarpackiego obejmująca obszary powiatów: bieszczadzki, brzozowski, jarosławski, jasielski, krośnieński, leski, lubaczowski, przemyski, przeworski, sanocki oraz miast na prawach powiatu: Krosno, Przemyśl"
   },
-  "23": {
-    link: "/sejm/23",
-    regionId: 23,
-    text: "Okręg wyborczy nr 23 [Rzeszów]",
+  {
+    "regionId": 23,
+    "seats": 15,
+    "listCount": 7,
+    "candidates": 195,
+    "stats": "",
+    
+    "headquarters": "Rzeszów",
+    "description": "część województwa podkarpackiego obejmująca obszary powiatów: dębicki, kolbuszowski, leżajski, łańcucki, mielecki, niżański, ropczycko-sędziszowski, rzeszowski, stalowowolski, strzyżowski, tarnobrzeski oraz miast na prawach powiatu: Rzeszów, Tarnobrzeg"
   },
-  "24": {
-    link: "/sejm/24",
-    regionId: 24,
-    text: "Okręg wyborczy nr 24 [Białystok]",
+  {
+    "regionId": 24,
+    "seats": 14,
+    "listCount": 10,
+    "candidates": 245,
+    "stats": "",
+    
+    "headquarters": "Białystok",
+    "description": "województwo podlaskie"
   },
-  "25": {
-    link: "/sejm/25",
-    regionId: 25,
-    text: "Okręg wyborczy nr 25 [Gdańsk]",
+  {
+    "regionId": 25,
+    "seats": 12,
+    "listCount": 8,
+    "candidates": 187,
+    "stats": "",
+    
+    "headquarters": "Gdańsk",
+    "description": "część województwa pomorskiego obejmująca obszary powiatów: gdański, kwidzyński, malborski, nowodworski, starogardzki, sztumski, tczewski  oraz miast na prawach powiatu: Gdańsk, Sopot"
   },
-  "26": {
-    link: "/sejm/26",
-    regionId: 26,
-    text: "Okręg wyborczy nr 26 [Słupsk]",
+  {
+    "regionId": 26,
+    "seats": 14,
+    "listCount": 7,
+    "candidates": 187,
+    "stats": "",
+    
+    "headquarters": "Słupsk",
+    "description": "część województwa pomorskiego obejmująca obszary powiatów: bytowski, chojnicki, człuchowski, kartuski, kościerski, lęborski, pucki, słupski, wejherowski oraz miast na prawach powiatu: Gdynia, Słupsk"
   },
-  "27": {
-    link: "/sejm/27",
-    regionId: 27,
-    text: "Okręg wyborczy nr 27 [Bielsko-biała]",
+  {
+    "regionId": 27,
+    "seats": 9,
+    "listCount": 8,
+    "candidates": 129,
+    "stats": "",
+    
+    "headquarters": "Bielsko-Biała",
+    "description": "część województwa śląskiego obejmująca obszary powiatów: bielski, cieszyński, pszczyński, żywiecki oraz miasta na prawach powiatu: Bielsko-Biała"
   },
-  "28": {
-    link: "/sejm/28",
-    regionId: 28,
-    text: "Okręg wyborczy nr 28 [Częstochowa]",
+  {
+    "regionId": 28,
+    "seats": 7,
+    "listCount": 7,
+    "candidates": 95,
+    "stats": "",
+    
+    "headquarters": "Częstochowa",
+    "description": "część województwa śląskiego obejmująca obszary powiatów: częstochowski, kłobucki, lubliniecki, myszkowski oraz miasta na prawach powiatu: Częstochowa"
   },
-  "29": {
-    link: "/sejm/29",
-    regionId: 29,
-    text: "Okręg wyborczy nr 29 [Katowice]",
+  {
+    "regionId": 29,
+    "seats": 9,
+    "listCount": 5,
+    "candidates": 90,
+    "stats": "",
+    
+    "headquarters": "Katowice",
+    "description": "część województwa śląskiego obejmująca obszary powiatów: gliwicki, tarnogórski  oraz miast na prawach powiatu: Bytom, Gliwice, Zabrze"
   },
-  "30": {
-    link: "/sejm/30",
-    regionId: 30,
-    text: "Okręg wyborczy nr 30 [Bielsko-biała]",
+  {
+    "regionId": 30,
+    "seats": 9,
+    "listCount": 8,
+    "candidates": 144,
+    "stats": "",
+    
+    "headquarters": "Bielsko-Biała",
+    "description": "część województwa śląskiego obejmująca obszary powiatów: mikołowski, raciborski, rybnicki, wodzisławski oraz miast na prawach powiatu: Jastrzębie-Zdrój, Rybnik, Żory"
   },
-  "31": {
-    link: "/sejm/31",
-    regionId: 31,
-    text: "Okręg wyborczy nr 31 [Katowice]",
+  {
+    "regionId": 31,
+    "seats": 12,
+    "listCount": 6,
+    "candidates": 138,
+    "stats": "",
+    
+    "headquarters": "Katowice",
+    "description": "część województwa śląskiego obejmująca obszar powiatu: bieruńsko-lędziński oraz miast na prawach powiatu: Chorzów, Katowice, Mysłowice, Piekary Śląskie, Ruda Śląska, Siemianowice Śląskie, Świętochłowice, Tychy"
   },
-  "32": {
-    link: "/sejm/32",
-    regionId: 32,
-    text: "Okręg wyborczy nr 32 [Katowice]",
+  {
+    "regionId": 32,
+    "seats": 9,
+    "listCount": 6,
+    "candidates": 106,
+    "stats": "",
+    
+    "headquarters": "Katowice",
+    "description": "część województwa śląskiego obejmująca obszary powiatów: będziński, zawierciański oraz miast na prawach powiatu: Dąbrowa Górnicza, Jaworzno, Sosnowiec"
   },
-  "33": {
-    link: "/sejm/33",
-    regionId: 33,
-    text: "Okręg wyborczy nr 33 [Kielce]",
+  {
+    "regionId": 33,
+    "seats": 16,
+    "listCount": 10,
+    "candidates": 274,
+    "stats": "",
+    
+    "headquarters": "Kielce",
+    "description": "województwo świętokrzyskie"
   },
-  "34": {
-    link: "/sejm/34",
-    regionId: 34,
-    text: "Okręg wyborczy nr 34 [Elbląg]",
+  {
+    "regionId": 34,
+    "seats": 8,
+    "listCount": 7,
+    "candidates": 106,
+    "stats": "",
+    
+    "headquarters": "Elbląg",
+    "description": "część województwa warmińsko-mazurskiego obejmująca obszary powiatów: bartoszycki, braniewski, działdowski, elbląski, iławski, lidzbarski, nowomiejski, ostródzki oraz miasta na prawach powiatu: Elbląg"
   },
-  "35": {
-    link: "/sejm/35",
-    regionId: 35,
-    text: "Okręg wyborczy nr 35 [Olsztyn]",
+  {
+    "regionId": 35,
+    "seats": 10,
+    "listCount": 7,
+    "candidates": 139,
+    "stats": "",
+    
+    "headquarters": "Olsztyn",
+    "description": "część województwa warmińsko-mazurskiego obejmująca obszary powiatów: ełcki, giżycki, gołdapski, kętrzyński, mrągowski, nidzicki, olecki, olsztyński, piski, szczycieński, węgorzewski oraz miasta na prawach powiatu: Olsztyn"
   },
-  "36": {
-    link: "/sejm/36",
-    regionId: 36,
-    text: "Okręg wyborczy nr 36 [Kalisz]",
+  {
+    "regionId": 36,
+    "seats": 12,
+    "listCount": 6,
+    "candidates": 144,
+    "stats": "",
+    
+    "headquarters": "Kalisz",
+    "description": "część województwa wielkopolskiego obejmująca obszary powiatów: gostyński, jarociński, kaliski, kępiński, kościański, krotoszyński, leszczyński, ostrowski, ostrzeszowski, pleszewski, rawicki oraz miast na prawach powiatu: Kalisz, Leszno"
   },
-  "37": {
-    link: "/sejm/37",
-    regionId: 37,
-    text: "Okręg wyborczy nr 37 [Konin]",
+  {
+    "regionId": 37,
+    "seats": 9,
+    "listCount": 8,
+    "candidates": 139,
+    "stats": "",
+    
+    "headquarters": "Konin",
+    "description": "część województwa wielkopolskiego obejmująca obszary powiatów: gnieźnieński, kolski, koniński, słupecki, średzki, śremski, turecki, wrzesiński oraz miasta na prawach powiatu: Konin"
   },
-  "38": {
-    link: "/sejm/38",
-    regionId: 38,
-    text: "Okręg wyborczy nr 38 [Piła]",
+  {
+    "regionId": 38,
+    "seats": 9,
+    "listCount": 6,
+    "candidates": 108,
+    "stats": "",
+    
+    "headquarters": "Piła",
+    "description": "część województwa wielkopolskiego obejmująca obszary powiatów: chodzieski, czarnkowsko-trzcianecki, grodziski, międzychodzki, nowotomyski, obornicki, pilski, szamotulski, wągrowiecki, wolsztyński, złotowski"
   },
-  "39": {
-    link: "/sejm/39",
-    regionId: 39,
-    text: "Okręg wyborczy nr 39 [Poznań]",
+  {
+    "regionId": 39,
+    "seats": 10,
+    "listCount": 6,
+    "candidates": 118,
+    "stats": "",
+    
+    "headquarters": "Poznań",
+    "description": "część województwa wielkopolskiego obejmująca obszar powiatu: poznański oraz miasta na prawach powiatu: Poznań"
   },
-  "40": {
-    link: "/sejm/40",
-    regionId: 40,
-    text: "Okręg wyborczy nr 40 [Koszalin]",
+  {
+    "regionId": 40,
+    "seats": 8,
+    "listCount": 6,
+    "candidates": 96,
+    "stats": "",
+    
+    "headquarters": "Koszalin",
+    "description": "część województwa zachodniopomorskiego  obejmująca obszary powiatów: białogardzki, choszczeński, drawski, kołobrzeski, koszaliński, sławieński, szczecinecki, świdwiński, wałecki oraz miasta na prawach powiatu: Koszalin"
   },
-  "41": {
-    link: "/sejm/41",
-    regionId: 41,
-    text: "Okręg wyborczy nr 41 [Szczecin]",
-  },
-};
+  {
+    "regionId": 41,
+    "seats": 12,
+    "listCount": 7,
+    "candidates": 156,
+    "stats": "",
+    
+    "headquarters": "Szczecin",
+    "description": "część województwa zachodniopomorskiego obejmująca obszary powiatów: goleniowski, gryficki, gryfiński, kamieński, łobeski, myśliborski, policki, pyrzycki, stargardzki oraz miast na prawach powiatu: Szczecin, Świnoujście"
+  }
+]

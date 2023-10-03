@@ -1,7 +1,7 @@
 "use client";
 
 import { useMounted, useHover } from "@/hooks";
-import { SVGProps, useEffect } from "react";
+import { SVGProps, useEffect, useState } from "react";
 import styles from "./Region.module.css";
 
 interface RegionProps extends SVGProps<SVGPathElement> {
@@ -15,6 +15,7 @@ interface RegionProps extends SVGProps<SVGPathElement> {
 export const Region = ({ children, link, text, regionId, getSelected, getHovered }: RegionProps) => {
   const { hasMounted: _hasMounted } = useMounted();
   const [isHovered, eventHandlers] = useHover();
+  const [wasSelected, setWasSelected] = useState(false);
 
   useEffect(() => {
     if (isHovered && getHovered && regionId) {
@@ -22,11 +23,18 @@ export const Region = ({ children, link, text, regionId, getSelected, getHovered
     }
   }, [isHovered]);
 
+  const handleGetSelected = () => {
+    if (getSelected && regionId) {
+      getSelected(regionId);
+      setWasSelected(true);
+    }
+  };
+
   return (
     <>
       <a
-        onClick={() => getSelected && regionId && getSelected(regionId)}
-        className={styles.region}
+        onClick={() => handleGetSelected()}
+        className={wasSelected ? styles.regionSelected : styles.region}
         {...eventHandlers}
       >
         {children}

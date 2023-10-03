@@ -13,6 +13,18 @@
   cursor: pointer;
 }
 
+.regionSelected{
+  cursor: pointer;
+  fill: #1c84df;
+  position: relative;
+}
+
+.regionSelected:hover{
+  cursor: pointer;
+  fill: #1c1fdf;
+  position: relative;
+}
+
 .region:hover{
   cursor: pointer;
   fill: #BFD676;

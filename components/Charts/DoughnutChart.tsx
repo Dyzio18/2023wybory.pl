@@ -8,7 +8,7 @@ import { Doughnut } from 'react-chartjs-2';
 const data = {
   labels: [
     PARTIES.pis.name,
-    PARTIES.po.name,
+    PARTIES.ko.name,
     PARTIES.kwin.name,
     PARTIES.nl.name,
     PARTIES.tr.name,
@@ -21,16 +21,15 @@ const data = {
       data: [37, 31, 9, 8, 6, 2, 7],
       backgroundColor: [
         PARTIES.pis.color,
-        PARTIES.po.color,
+        PARTIES.ko.color,
         PARTIES.kwin.color,
         PARTIES.nl.color,
         PARTIES.tr.color,
         PARTIES.other.color,
-        PARTIES.none.color,
       ],
       borderColor: [
         PARTIES.pis.hoverColor,
-        PARTIES.po.hoverColor,
+        PARTIES.ko.hoverColor,
         PARTIES.kwin.hoverColor,
         PARTIES.nl.hoverColor,
         PARTIES.tr.hoverColor,

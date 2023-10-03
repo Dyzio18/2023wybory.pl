@@ -58,9 +58,9 @@ const data = {
     },
     {
       fill: false,
-      label: PARTIES.po.name,
+      label: PARTIES.ko.name,
       data: poolData.po,
-      borderColor: PARTIES.po.color,
+      borderColor: PARTIES.ko.color,
     },
     {
       fill: false,
