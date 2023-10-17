@@ -18,19 +18,20 @@ export const IntroSection = () => {
             />
           </div>
 
-          <div className="lg:py-24">
+          <div className="lg:py-10">
             <h2 className="text-3xl font-bold sm:text-4xl">
               Wybory do Sejmu i Senatu Rzeczypospolitej Polskiej
             </h2>
             <h2 className="text-3xl font-bold sm:text-4xl">
               15 października 2023
             </h2>
+            <div className="pt-4">
+              Frekwencja
+            </div>
+            <div className="text-5xl text-rose-700 font-bold">
+              74,38%
+            </div>
 
-            <p className="mt-4 text-gray-600">
-              Wybory to podstawowy mechanizm demokracji.
-              Wybierzemy 460&nbsp;posłów i&nbsp;100&nbsp;senatorów, w&nbsp;ręce których oddamy               kluczowe decyzje dotyczące naszego kraju na kolejne 4 lata.
-            </p>
-            <Countdown />
           </div>
         </div>
       </div>

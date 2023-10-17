@@ -43,11 +43,6 @@ export const MobileNavigation = () => {
           role="menu"
         >
           <div className="p-2">
-            <a href="/faq"
-              className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700">
-              Wyborcze FAQ
-            </a>
-
             <a
               href="/sejm"
               className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"

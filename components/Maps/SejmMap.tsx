@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Maps.module.css";
 import { Region } from "./Region";
-import { SEJM } from "@/data/DATASETS/SEJM";
+import { SEJM } from "@/data/SEJM";
 
 export const SejmMap = () => {
 
@@ -16,36 +16,11 @@ export const SejmMap = () => {
     }
   }, [selectedRegion, hoveredRegion]);
 
-  console.log('selectedRegion', selectedRegion, 'hoveredRegion', hoveredRegion);
-
   return (
     <div className={styles.mapWrapper}>
-      {selectedRegion && (
-        <div className={styles.details}>
-          <div className="w-5/6">
-            <h2 className="text-lg font-bold">Okręg {selectedRegion}</h2>
-            <h3 className="text-sm">{SEJM.find(region => region.regionId === selectedRegion)?.description || ''}</h3>
-            <span className="text-sm font-bold">Kandydaci: </span>
-            {SEJM.find(region => region.regionId === selectedRegion)?.candidates}
-            <span className="text-sm font-bold pl-4">Mandaty do sejmu: </span>
-            {SEJM.find(region => region.regionId === selectedRegion)?.seats}
-          </div>
-          <div className="w-1/6">
-            <div className="flex flex-col md:flex-row md:justify-end md:items-start">
-              <a
-                href={`/sejm/${selectedRegion}`}
-                className="block px-4 p-4 text-white bg-blue-500 rounded hover:bg-blue-600 md:ml-4 mt-4 md:mt-0"
-              >
-                Zobacz okręg {selectedRegion}
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <div>
+      <div className={styles.map}>
         <svg
-          className={styles.map}
+          className={styles.svg}
           version="1.1"
           viewBox="0 0 1000 1000"
           width={1000}
@@ -445,7 +420,32 @@ export const SejmMap = () => {
           </Region>
         </svg>
       </div>
+      <div className={styles.details}>
+        {selectedRegion ? (
+          <>
+            <h2 className="text-lg font-bold">Okręg {selectedRegion}</h2>
+            <h3 className="text-sm">{SEJM.find(region => region.regionId === selectedRegion)?.description || ''}</h3>
+            <span className="text-sm font-bold pt-4">
+              Kandydaci: {SEJM.find(region => region.regionId === selectedRegion)?.candidates}
+            </span>
+            <span className="text-sm font-bold pb-4">
+              Mandaty do sejmu: {SEJM.find(region => region.regionId === selectedRegion)?.seats}
+            </span>
 
+            <a
+              href={`/sejm/${selectedRegion}`}
+              className="block px-4 p-4 text-white bg-blue-500 rounded hover:bg-blue-600"
+            >
+              Zobacz okręg {selectedRegion}
+            </a>
+          </>
+        ) : (
+          <>
+            <h1 className="text-2xl text-center">Wybierz okręg aby sprawdzić wyniki</h1>
+          </>
+        )}
+
+      </div>
     </div >
   );
 };

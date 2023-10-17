@@ -34,7 +34,7 @@ export const Region = ({ children, link, text, regionId, getSelected, getHovered
     <>
       <a
         onClick={() => handleGetSelected()}
-        className={wasSelected ? styles.regionSelected : styles.region}
+        className={styles.region}
         {...eventHandlers}
       >
         {children}

@@ -92,19 +92,23 @@ export default function Page({ params }: PageProps) {
             <tr>
               <th className="px-4 py-2">Imię i nazwisko</th>
               <th className="px-4 py-2">Partia</th>
+              <th className="px-4 py-2">Liczba głosów</th>
+              <th className="px-4 py-2">% na liście</th>
+              <th className="px-4 py-2">% w okręgu</th>
               <th className="px-4 py-2">Zawód</th>
               <th className="px-4 py-2">Miejsce zamieszkania</th>
-              <th className="px-4 py-2">Liczba głosów</th>
             </tr>
           </thead>
           <tbody>
-            {candidates?.map((candidate: CandidateCsvHeaders) => (
+            {candidates?.sort((a, b) => ((b.voteCount || 0) - (a.voteCount || 0)) as number).map((candidate: CandidateCsvHeaders) => (
               <tr key={candidate.districtNumber}>
                 <td className="border px-4 py-2">{candidate.fullName}</td>
                 <td className="border px-4 py-2">{candidate.partyAffiliation}</td>
+                <td className="border px-4 py-2">{candidate.voteCount || "-"}</td>
+                <td className="border px-4 py-2">{candidate.percentageOfVotesOnList}</td>
+                <td className="border px-4 py-2">{candidate.percentageOfVotesInDistrict}</td>
                 <td className="border px-4 py-2">{candidate.occupation}</td>
                 <td className="border px-4 py-2">{candidate.residence}</td>
-                <td className="border px-4 py-2">{candidate.voteCount || "-"}</td>
               </tr>
             ))}
           </tbody>
