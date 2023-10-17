@@ -117,7 +117,7 @@ export interface CandidateCsvHeaders {
   municipalityMz: string;              // "Gmina m. z."
   partyAffiliation: string;            // "Przynależność do partii"
   support: string;                     // "Poparcie"
-  voteCount: string;                   // "Liczba głosów"
+  voteCount: number;                   // "Liczba głosów"
   percentageOfVotesOnList: string;     // "Procent głosów oddanych na listę"
   percentageOfVotesInDistrict: string; // "Procent głosów oddanych w okręgu"
   mandateAwarded: string;              // "Czy przyznano mandat"

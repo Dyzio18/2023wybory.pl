@@ -1,5 +1,3 @@
-import { Countdown } from "..";
-
 export const IntroSection = () => {
 
   return (
